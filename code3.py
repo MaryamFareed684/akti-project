@@ -74,12 +74,12 @@ root.configure(bg="#F3F4F6")
 root.resizable(True, True)
 
 # --- Scrollable Frame Setup --- #
-main_frame = ttk.Frame(root)
+main_frame = tk.Frame(root)
 main_frame.pack(fill="both", expand=True)
 
 canvas = tk.Canvas(main_frame, bg="#F3F4F6")
-scrollbar = ttk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
-scrollable_frame = ttk.Frame(canvas)
+scrollbar = tk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
+scrollable_frame = tk.Frame(canvas)
 
 scrollable_frame.bind(
     "<Configure>",
